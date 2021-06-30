@@ -1,0 +1,33 @@
+import java.util.*;
+class eoro
+{
+static boolean isEven(int n)
+{
+if((n ^ 1) ==n+1)
+return true;
+else
+return false;
+}
+public static void main(String args[])
+{
+Scanner in=new Scanner(System.in);
+int n;
+System.out.println("enter any number:");
+n=in.nextInt();
+System.out.println(isEven(n) == true ? "Even" : "Odd");
+
+}
+}
+
+
+output:
+
+D:\tarun>java eoro
+enter any number:
+12
+Even
+
+D:\tarun>java eoro
+enter any number:
+33
+Odd
